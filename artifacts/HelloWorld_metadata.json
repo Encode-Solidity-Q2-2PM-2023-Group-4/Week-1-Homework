@@ -1,0 +1,193 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getOwners",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "helloWorld",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "increaseOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "owners",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "ownersBool",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newText",
+						"type": "string"
+					}
+				],
+				"name": "setText",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Linus Kelsey",
+			"kind": "dev",
+			"methods": {
+				"helloWorld()": {
+					"returns": {
+						"_0": "The text string, default of \"Hello World\""
+					}
+				}
+			},
+			"stateVariables": {
+				"owner": {
+					"details": "owner is the original contract deployer"
+				},
+				"owners": {
+					"details": "owners is a list of admins"
+				},
+				"ownersBool": {
+					"details": "ownersBool is a mapping indicating whether an address is an admin"
+				},
+				"text": {
+					"details": "text is the output string of the helloWorld method"
+				}
+			},
+			"title": "A contract for testing ownership",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"constructor": {
+					"notice": "Initialising the contract"
+				},
+				"getOwners()": {
+					"notice": "See all admins, possible for any caller"
+				},
+				"helloWorld()": {
+					"notice": "The main helloWorld function"
+				},
+				"increaseOwnership(address)": {
+					"notice": "Add admins, only possible if caller admin"
+				},
+				"setText(string)": {
+					"notice": "Changes text string, only possible if caller is an admin"
+				}
+			},
+			"notice": "A contract to test admins being added consecutively",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"HelloWorld.sol": "HelloWorld"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"HelloWorld.sol": {
+			"keccak256": "0xf21e5b14bf2a0897a1f1ab29c4d59b544273281625e893bb34ee886898ca67ef",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://6371f2b554a4ebb00ed7487316f7a3f0296268f8f53b3d6c1483e2ac64cb8a2b",
+				"dweb:/ipfs/QmbDW989YY1LtWZfwqxQW7GnJ29ZtNBT3Z7gKdggqjSsMS"
+			]
+		}
+	},
+	"version": 1
+}
